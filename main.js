@@ -97,3 +97,37 @@ console.log(findInvalidCards(batch));
 console.log('');
 console.log('##### Invalid Card Companies #####');
 console.log(idInvalidCardCompanies(findInvalidCards(batch)));
+
+
+/**
+ * Use different credit card numbers from a credit card number generator and validator site 
+ * and test if your functions work for all types of credit cards.
+ */
+
+
+const mystery6 = [4, 5, 3, 9, 8, 9, 9, 3, 2, 8, 2, 3, 8, 7, 2, 7];
+const mystery7 = [6, 0, 1, 1, 6, 8, 0, 1, 7, 2, 5, 8, 1, 6, 4, 0];
+const mystery8 = [5, 2, 8, 4, 9, 4, 8, 9, 3, 4, 7, 5, 5, 1, 2, 4];
+const mystery9 = [3, 4, 4, 2, 5, 6, 2, 3, 3, 1, 5, 2, 9, 6, 5];
+const mystery10 = [3, 6, 3, 2, 7, 0, 0, 6, 7, 2, 4, 5, 0, 4];
+
+const batchTwo = [mystery6, mystery7, mystery8, mystery9, mystery10];
+
+console.log('');
+console.log('##### Extra Credit #####');
+console.log('##### Invalid Credit Card Numbers #####');
+console.log(findInvalidCards(batchTwo));
+console.log('');
+console.log('##### Invalid Card Companies #####');
+console.log(idInvalidCardCompanies(findInvalidCards(batchTwo)));
+
+/**
+ * To make it easier to test credit card numbers, create a function that 
+ * accepts a string and converts it into an array of numbers 
+ * like the initially provided arrays. (Check the hint for a helpful function)
+ */
+
+const convertStringToArray = cardString => parseInt(cardString.split());
+
+const mystery11 = convertStringToArray('6011140372434793');
+console.log(mystery11);
